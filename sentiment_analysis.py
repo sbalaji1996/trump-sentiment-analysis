@@ -136,11 +136,24 @@ def test_without_neuts(feats_presence, coeffs, polarities):
 					+ coeffs[4]*feats_presence[4][i]
 					+ coeffs[5]*feats_presence[5][i]
 					+ coeffs[6]*feats_presence[6][i]
-					+ coeffs[7]*feats_presence[7][i])
+					+ coeffs[7]*feats_presence[7][i]
+					+ coeffs[8]*feats_presence[8][i]
+					+ coeffs[9]*feats_presence[9][i]
+					+ coeffs[10]*feats_presence[10][i]
+					+ coeffs[11]*feats_presence[11][i]
+					+ coeffs[12]*feats_presence[12][i]
+					+ coeffs[13]*feats_presence[13][i]
+					+ coeffs[14]*feats_presence[14][i]
+					+ coeffs[15]*feats_presence[15][i]
+					+ coeffs[16]*feats_presence[16][i]
+					+ coeffs[17]*feats_presence[17][i]
+					+ coeffs[18]*feats_presence[18][i]
+					+ coeffs[19]*feats_presence[19][i])
 
 	results = []
 	for i, item in enumerate(total):
-		if (sigmoid(item) > 0.65):
+		#print(sigmoid(item))
+		if (sigmoid(item) > 0.893):
 			results.append(3)
 		else:
 			results.append(1)
@@ -155,7 +168,6 @@ def test_without_neuts(feats_presence, coeffs, polarities):
 	print 'The accuracy of this model, testing without neutral sentiments, is %f percent.' % (accuracy)
 
 coeffs = log_reg(training_word_presence, training_pols)
-print(coeffs)
 test_without_neuts(testing_word_presence, coeffs, testing_pols)
 
 #================================================================================================================================================================
