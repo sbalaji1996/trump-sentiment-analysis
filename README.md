@@ -1,4 +1,4 @@
-#About
+# About
 
 In this study, we investigate the rhetorical effects that Donald Trump’s 
 Facebook statuses have on his social media followers. We begin with sentiment 
@@ -18,7 +18,7 @@ certain keywords can predict the reaction distribution of a post. We also find t
 irregular formatting, such as special punctuation and entire-word capitalization, can 
 have a magnifying effect on certain reactions.
 
-#Results
+# Results
 
 Our findings support our 3 hypotheses and allow us make strong assertions 
 about the relationship between rhetoric and response in social media. We can 
@@ -38,13 +38,13 @@ followers. Lastly, we can say that Trump’s rhetoric on social media is deeply
 entrenched in emotional sentiment, and thus a potent tool for galvanizing his 
 conservative base and rallying millions of supporters.
 
-#Acknowledgements
+# Acknowledgements
 
 Professor Yang Xu, U.C Berkeley
 
 Max Woolf: https://github.com/minimaxir/facebook-page-post-scraper
 
-#Packages Required
+# Packages Required
 
 To run these scripts, you need to have the following packages installed: 
 
